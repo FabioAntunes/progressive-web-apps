@@ -1,0 +1,41 @@
+@import "reveal.scss";
+
+
+.reveal{
+	blockquote {
+		padding: 5px 45px !important;
+
+		&::before, &::after {
+			position: absolute;
+			font-size: 4em;
+			line-height: 1em;
+			color: rgba(255,58,29,1);
+			z-index: -1;
+		}
+
+		&::before {
+		  content: "“";
+		  top: 5px;
+		  left: 0;
+		}
+
+		&::after {
+			content: "”";
+			bottom: -60px;
+			right: 10px;
+		}
+	}
+	.quote {
+		padding: 15px 15px 0;
+
+		p{
+			margin: 0 15px 0;
+		}
+	}
+
+
+
+	.text-left{
+		text-align: left;
+	}
+}
