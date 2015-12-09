@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>Progressive Web Apps – HTML Presentation Framework</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="A simple presentation about progressive web apps">
+		<meta name="author" content="Fábio Antunes">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -51,14 +51,11 @@
 				</section>
 
 				<section>
-					<div class="quote">
-						<h2>
-							A progressive web app provides an app-like user experience that is low friction and is built using modern web capibilities
-						</h2>
-					</div>
-					<p>
-						source from <a href="https://twitter.com/beverloo" target="_blank">@beverloo</a> slides
-					</p>
+                    <blockquote cite="https://twitter.com/beverloo">
+						<p>
+						    A progressive web app provides an app-like user experience that is low friction and is built using modern web capibilities
+						</p>
+                    </blockquote>
 				</section>
 
 				<section data-background="/img/wat.jpg">
@@ -102,21 +99,121 @@
 							<li class="fragment">Low friction! Good for users good for Websites</li>
 							<li class="fragment">Last but not least, Google needs it and so all the web companies</li>
 						</ul>
+
+                        <aside class="notes">
+							If we only had mobile apps, google and other search engines wouldn't be able to track and index information
+						</aside>
 					</section>
 				</section>
 
 				<section>
-					<h1>Statistics</h1>
-					<blockquote cite="https://www.youtube.com/watch?v=MyQ8mtR9WxI">
-						<h2>25</h2>
-						is the average apps used per month by a mobile user
-					</blockquote>
+				    <section>
+    					<h3>Statistics</h3>
+    					<blockquote cite="https://www.youtube.com/watch?v=m2a9hlUFRhg">
+    						<h2>25</h2>
+    						is the average apps used per month by a mobile user
+    					</blockquote>
 
-					<blockquote cite="https://www.youtube.com/watch?v=MyQ8mtR9WxI">
-						<h2>100+</h2>
-						sites navigated to per month by the average Chrome for Android user
-					</blockquote>
+    					<blockquote cite="https://www.youtube.com/watch?v=m2a9hlUFRhg">
+    						<h2>100+</h2>
+    						sites navigated to per month by the average Chrome for Android user
+    					</blockquote>
+				    </section>
+
+				    <section>
+                        <blockquote cite="https://www.youtube.com/watch?v=m2a9hlUFRhg">
+    						<h1>80%</h1>
+    						of time spent is in  User's top 3 Apps
+    					</blockquote>
+				    </section>
+
+                    <section data-state="slideReach">
+						<h1>Growth</h1>
+                        <svg id="uniqueVisitors"></svg>
+                        <p>
+                            Comparing the reach of the 1000 top Apps to the corresponding 1000 top websites
+                        </p>
+				    </section>
+
+                    <section>
+                        <blockquote cite="https://www.youtube.com/watch?v=m2a9hlUFRhg">
+    						<h1>2x</h1>
+    						growth in mobile web traffic vs growth in app traffic
+    					</blockquote>
+
+                        <aside class="notes">
+							If we narrow down the 1000 top apps only the first twelve generate more traffic on their native apps than their mobile websites. these are the youtube, instagram, pinterest.
+						</aside>
+				    </section>
 				</section>
+
+                <section>
+                    <section>
+                        <h2>PWAs key features</h2>
+                        <ul>
+                            <li class="fragment">Performance!</li>
+                            <li class="fragment">Background Sync</li>
+                            <li class="fragment">Durable storage</li>
+                            <li class="fragment">Web Bluetooth, WebUSb</li>
+                            <li class="fragment">Web NFC</li>
+                            <li class="fragment">Improved WebRTC</li>
+                            <li class="fragment">Offline</li>
+                            <li class="fragment">Push Notifications!!</li>
+                        </ul>
+                        <aside class="notes">
+                            <ul>
+                                <li>Store and cache the shell of your website</li>
+                                <li>Upload photos or files in the background</li>
+                                <li>Configure and control devices</li>
+                                <li>Transfer data between devices</li>
+                                <li>More Control over camera</li>
+                                <li>Last but not least, Push notifications</li>
+                            </ul>
+                        </aside>
+                    </section>
+
+				    <section data-background="/img/brent.gif">
+
+                    </section>
+                </section>
+
+			    <section>
+    			    <section>
+                        <h2>Power of Push Notifications</h2>
+                        <h3>Beyond the Rack</h3>
+                        <div>
+                            <div class="pull-left half-width">
+                                <h1>+72%</h1>
+                                <p>increase in time spent for users visiting via push notifications</p>
+                            </div>
+
+                            <div class="pull-right half-width">
+                                <h1>+26%</h1>
+                                <p>increase in average spend per visit by users arriving via a push notification</p>
+                            </div>
+                        </div>
+                        <aside class="notes">
+                            users who re-engange with their website through push notifications spend on average 72% more time and they spend 26% more money.<br>
+                            this is possible targetting users.
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>Power of Push Notifications</h2>
+                        <h3>Financial Times</h3>
+                        <div>
+                            <div class="pull-left half-width">
+                                <h1>+17%</h1>
+                                <p>click-through rate</p>
+                            </div>
+
+                            <div class="pull-right half-width">
+                                <h1>+90%</h1>
+                                <p>retention</p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
 
 				<!-- Example of nested vertical slides -->
 				<section>
@@ -444,7 +541,7 @@ Reveal.addEventListener( 'customevent', function() {
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
+        <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
 		<script>
 
 			// Full list of configuration options available at:
@@ -467,6 +564,66 @@ Reveal.addEventListener( 'customevent', function() {
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
+
+            Reveal.addEventListener( 'slideReach', function() {
+                var data = [3.3,8.9];
+
+                var bar_w = 200,
+                    bar_h = 300,
+                    label_padding = 100,
+                    bar_padding = 225;
+
+                var x = d3.scale.linear()
+                      .domain([0, 1])
+                      .range([0, bar_w + bar_padding]);
+
+                var y = d3.scale.linear()
+                       .domain([0, d3.max(data)])
+                       .rangeRound([0, bar_h - label_padding]); // rangeRound to avoid antialiasing artifacts.
+
+                var chart = d3.select("#uniqueVisitors")
+                     .attr("class", "chart")
+                     .attr("width", (bar_w * data.length) + bar_padding)
+                     .attr("height", bar_h);
+
+                chart.selectAll("rect")
+                 .data(data)
+                 .enter()
+                 .append("rect")
+                 .attr("x", function(d, i) { return x(i) - .5; })
+                 .attr("y", function(d) { return bar_h - .5; })
+                 .attr("width", bar_w)
+                 .attr("class", function(d,i) {return i==0?'first':'second'})
+                 .transition().delay(function (d,i){ return (i+1) * 1600;})
+                 .duration(800)
+                 .attr("height", function(d) { return y(d); })
+                 .attr("y", function(d) { return bar_h - y(d) - .5; });
+
+                chart.selectAll("text")
+                 .data(data)
+                 .enter().append("text")
+                 .attr("width", bar_w)
+                 .attr("class", function(d,i) {return i==0?'first':'second'})
+                 .attr("x", function(d, i) { return x(i) + bar_w/2; })
+                 .attr("y", function(d) { return bar_h - y(d) - 60; })
+                 .attr("text-anchor", "middle")
+                 .transition().delay(function (d,i){ return (i+1) * 1600;})
+                 .duration(800)
+                 .text(function(d) { return d; });
+
+                 chart.selectAll("label")
+                  .data(data)
+                  .enter().append("text")
+                  .attr("width", bar_w)
+                  .attr("class", function(d,i) {return i==0?'first':'second'})
+                  .attr("x", function(d, i) { return x(i) + bar_w/2; })
+                  .attr("y", function(d) { return bar_h - y(d) - 20; })
+                  .attr("text-anchor", "middle")
+                  .transition().delay(function (d,i){ return (i+1) * 1600;})
+                  .duration(800)
+                  .text(function(d, i) { return i==0?'Mobile Apps':'Websites' });
+
+            } );
 
 		</script>
 

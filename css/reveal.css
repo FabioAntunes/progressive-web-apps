@@ -1322,3 +1322,26 @@ html:-moz-full-screen-ancestor {
 
 .reveal .text-left {
   text-align: left; }
+
+.reveal .pull-left {
+  float: left; }
+
+.reveal .pull-right {
+  float: right; }
+
+.reveal .half-width {
+  width: 50%; }
+
+.chart text.first {
+  fill: #f69525; }
+
+.chart text.second {
+  fill: #0f71b7; }
+
+.chart rect.first {
+  stroke: none;
+  fill: #f69525; }
+
+.chart rect.second {
+  stroke: none;
+  fill: #0f71b7; }

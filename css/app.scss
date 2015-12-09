@@ -33,9 +33,38 @@
 		}
 	}
 
-
-
 	.text-left{
 		text-align: left;
 	}
+
+    .pull-left{
+        float: left;
+    }
+
+    .pull-right{
+        float: right;
+    }
+
+    .half-width{
+        width: 50%;
+    }
+}
+
+.chart{
+    text.first {
+         fill: #f69525;
+    }
+    text.second {
+         fill: #0f71b7;
+    }
+
+    rect.first {
+        stroke: none;
+        fill: #f69525;
+    }
+
+    rect.second {
+        stroke: none;
+        fill: #0f71b7;
+    }
 }
